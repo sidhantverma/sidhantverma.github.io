@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f2ee">
+    <meta name="description" content="Hi, I'm Sidhant Verma, a Digital Solutions Developer with over 12 years of experience.">
+    <title>Sidhant Verma</title>
+    <link rel="preload" as="image" href="resources/photo_cutout.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js?v=certificates-1" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="Sidhant Verma home">SV</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="nav-contact" href="mailto:sidhantverma@hotmail.com">Contact <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-greeting">Hi, I’m</p>
+          <h1 id="hero-title">Sidhant Verma</h1>
+          <p class="hero-role">Digital Solutions Developer</p>
+          <p class="hero-experience"><strong id="experience-years">12+ years</strong> of experience</p>
+          <div class="hero-actions">
+            <a class="text-link linkedin-link" href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="resources/photo_cutout.png" alt="Portrait of Sidhant Verma" fetchpriority="high">
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="experience-heading">
+            <p class="section-label">EXPERIENCE</p>
+            <h2 id="experience-title">Where I’ve worked</h2>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="company-logo"><img src="resources/logos/BDO-Canada-Logo.svg" alt="BDO Canada"></div>
+              <h3>Senior Consultant <span>· Team / Tech Lead</span></h3>
+              <p class="company-name">BDO Canada LLP</p>
+              <p class="experience-dates"><time datetime="2023-10">Oct 2023</time> — Present</p>
+            </article>
+            <article class="experience-item">
+              <div class="company-logo deloitte-logo"><img src="resources/logos/deloitte.svg" alt="Deloitte"></div>
+              <h3>Assistant Manager <span>· Team / Tech Lead</span></h3>
+              <p class="company-name">Deloitte</p>
+              <p class="experience-dates"><time datetime="2022-04">Apr 2022</time> — <time datetime="2023-06">Jun 2023</time></p>
+            </article>
+            <article class="experience-item">
+              <div class="company-logo"><img src="resources/logos/FIS_Logo_Green.png" alt="FIS"></div>
+              <h3>Software Engineer II</h3>
+              <p class="company-name">FIS</p>
+              <p class="experience-dates"><time datetime="2016-05">May 2016</time> — <time datetime="2022-04">Apr 2022</time></p>
+            </article>
+            <article class="experience-item">
+              <div class="company-logo"><img src="resources/logos/oati.jpeg" alt="OATI"></div>
+              <h3>Software Developer</h3>
+              <p class="company-name">OATI</p>
+              <p class="experience-dates"><time datetime="2014-04">Apr 2014</time> — <time datetime="2016-05">May 2016</time></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="certifications-section" id="certifications" aria-labelledby="certifications-title">
+        <div class="shell">
+          <div class="experience-heading">
+            <p class="section-label">CERTIFICATIONS</p>
+            <h2 id="certifications-title">Credentials</h2>
+          </div>
+          <div class="certifications-list">
+            <article class="certification-item">
+              <div>
+                <h3>Azure Developer Associate</h3>
+                <p>Microsoft Certified</p>
+              </div>
+              <button class="certificate-viewer" type="button" data-title="Azure Developer Associate" data-file="resources/certs/ada.pdf">View certificate <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="certification-item">
+              <div>
+                <h3>Azure AI Fundamentals</h3>
+                <p>Microsoft Certified</p>
+              </div>
+              <button class="certificate-viewer" type="button" data-title="Azure AI Fundamentals" data-file="resources/certs/ai_fund.pdf">View certificate <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="certification-item">
+              <div>
+                <h3>GitHub Copilot</h3>
+                <p>GitHub Certified</p>
+              </div>
+              <button class="certificate-viewer" type="button" data-title="GitHub Copilot" data-file="resources/certs/github_copilot.pdf">View certificate <span aria-hidden="true">↗</span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="certificate-dialog" aria-labelledby="certificate-dialog-title">
+      <div class="certificate-dialog-header">
+        <h2 id="certificate-dialog-title">Certificate preview</h2>
+        <button class="certificate-dialog-close" type="button" aria-label="Close certificate preview">Close <span aria-hidden="true">×</span></button>
+      </div>
+      <iframe class="certificate-frame" title="Read-only certificate preview"></iframe>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="wordmark footer-mark" href="#home">SV</a>
+        <a href="mailto:sidhantverma@hotmail.com">sidhantverma@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <p>© <span id="year">2026</span> Sidhant Verma</p>
+      </div>
+    </footer>
+  </body>
+</html>
