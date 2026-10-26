@@ -3,109 +3,288 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3f2ee">
-    <meta name="description" content="Hi, I'm Sidhant Verma, a Digital Solutions Developer with over 12 years of experience.">
-    <title>Sidhant Verma</title>
+    <meta name="theme-color" content="#f6f4ef">
+    <meta name="description" content="Sidhant Verma — Digital Solutions Developer &amp; Technical Lead with 12+ years of experience building enterprise solutions, driving digital transformation, and delivering impactful technology products.">
+    <title>Sidhant Verma - Digital Solutions Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="resources/photo_cutout.png">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js?v=certificates-1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=editorial-3">
+    <script src="script.js?v=editorial-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <nav class="nav shell" aria-label="Main navigation">
-        <a class="wordmark" href="#home" aria-label="Sidhant Verma home">SV</a>
+        <a class="wordmark" href="#home" aria-label="Sidhant Verma home">
+          <span class="wordmark-initials">SV<span>.</span></span>
+          <span class="wordmark-full">Sidhant Verma</span>
+        </a>
+
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
           <span></span><span></span>
         </button>
+
         <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#certifications">Certifications</a>
-          <a href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="nav-contact" href="mailto:sidhantverma@hotmail.com">Contact <span aria-hidden="true">↗</span></a>
+          <a href="#certifications">Credentials</a>
+          <a href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="nav-contact" href="mailto:sidhantverma@hotmail.com">sidhantverma@hotmail.com <span aria-hidden="true">↗</span></a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero shell" id="home" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="hero-greeting">Hi, I’m</p>
-          <h1 id="hero-title">Sidhant Verma</h1>
-          <p class="hero-role">Digital Solutions Developer</p>
-          <p class="hero-experience"><strong id="experience-years">12+ years</strong> of experience</p>
-          <div class="hero-actions">
-            <a class="text-link linkedin-link" href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
+      <!-- HERO -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-ambient" aria-hidden="true">
+          <div class="hero-halo"></div>
+          <div class="hero-halo hero-halo-inner"></div>
+        </div>
+
+        <div class="shell hero-shell">
+          <div class="hero-masthead">
+            <span>Digital Solutions Developer</span>
+            <span class="masthead-dot" aria-hidden="true">·</span>
+            <span>Consulting, Software Engineering &amp; Solution Architecture</span>
+          </div>
+
+          <div class="hero-copy">
+            <p class="hero-greeting">Hi, I’m</p>
+            <h1 id="hero-title">
+              Sidhant <em>Verma</em>
+            </h1>
+
+            <div class="hero-editorial">
+              <div class="hero-narrative">
+                <p class="hero-lead">
+                  With <strong id="experience-years">12+ years</strong> of experience building enterprise solutions and driving digital transformation, I help organizations turn complex business challenges into scalable, efficient, and user-focused digital experiences.
+                </p>
+
+                <div class="hero-actions">
+                  <a class="editorial-link" href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">
+                    <span>LinkedIn profile</span>
+                    <i aria-hidden="true">↗</i>
+                  </a>
+                  <a class="editorial-link" href="mailto:sidhantverma@hotmail.com">
+                    <span>Get in touch</span>
+                    <i aria-hidden="true">↗</i>
+                  </a>
+                  <a class="editorial-link editorial-link-subtle" href="#experience">
+                    <span>Experience</span>
+                    <i aria-hidden="true">↓</i>
+                  </a>
+                </div>
+              </div>
+
+              <dl class="hero-notes" aria-label="At a glance">
+                <div>
+                  <dt>Current Role</dt>
+                  <dd>Senior Consultant · Team / Tech Lead at BDO Canada LLP</dd>
+                </div>
+                <div>
+                  <dt>Prior Chapters</dt>
+                  <dd>Deloitte · FIS · OATI</dd>
+                </div>
+                <div>
+                  <dt>Accreditations</dt>
+                  <dd>Microsoft Azure &amp; GitHub Copilot Certified</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
+
         <div class="hero-visual">
           <img src="resources/photo_cutout.png" alt="Portrait of Sidhant Verma" fetchpriority="high">
         </div>
       </section>
 
-      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <!-- ABOUT / PERSPECTIVE (DEEP MIDNIGHT CHAPTER) -->
+      <section class="about-section" id="about" aria-labelledby="about-title">
         <div class="shell">
-          <div class="experience-heading">
-            <p class="section-label">EXPERIENCE</p>
-            <h2 id="experience-title">Where I’ve worked</h2>
+          <div class="about-top">
+            <p class="section-label section-label-light">About</p>
+            <h2 id="about-title">
+              I bring a strong mix of <em>technical execution, leadership,</em> and collaboration.
+            </h2>
+            <p class="about-sublead">
+              My background spans enterprise application development, cloud-based solutions, and modern engineering practices, with a focus on delivering reliable, business-aligned outcomes.
+            </p>
           </div>
 
-          <div class="experience-list">
-            <article class="experience-item">
-              <div class="company-logo"><img src="resources/logos/BDO-Canada-Logo.svg" alt="BDO Canada"></div>
-              <h3>Senior Consultant <span>· Team / Tech Lead</span></h3>
-              <p class="company-name">BDO Canada LLP</p>
-              <p class="experience-dates"><time datetime="2023-10">Oct 2023</time> — Present</p>
+          <div class="about-pillars">
+            <article class="pillar-row">
+              <span class="pillar-num" aria-hidden="true">I</span>
+              <h3>Enterprise Solution Architecture</h3>
+              <p>
+                Designing end-to-end applications and modernizing complex ecosystems so technology investments remain resilient, maintainable, and aligned with business strategy.
+              </p>
             </article>
-            <article class="experience-item">
-              <div class="company-logo deloitte-logo"><img src="resources/logos/deloitte.svg" alt="Deloitte"></div>
-              <h3>Assistant Manager <span>· Team / Tech Lead</span></h3>
-              <p class="company-name">Deloitte</p>
-              <p class="experience-dates"><time datetime="2022-04">Apr 2022</time> — <time datetime="2023-06">Jun 2023</time></p>
+
+            <article class="pillar-row">
+              <span class="pillar-num" aria-hidden="true">II</span>
+              <h3>Consulting &amp; Technical Leadership</h3>
+              <p>
+                Leading engineering teams across advisory engagements—bridging executive stakeholders and developers through clear architecture, mentorship, and dependable delivery.
+              </p>
             </article>
-            <article class="experience-item">
-              <div class="company-logo"><img src="resources/logos/FIS_Logo_Green.png" alt="FIS"></div>
-              <h3>Software Engineer II</h3>
-              <p class="company-name">FIS</p>
-              <p class="experience-dates"><time datetime="2016-05">May 2016</time> — <time datetime="2022-04">Apr 2022</time></p>
-            </article>
-            <article class="experience-item">
-              <div class="company-logo"><img src="resources/logos/oati.jpeg" alt="OATI"></div>
-              <h3>Software Developer</h3>
-              <p class="company-name">OATI</p>
-              <p class="experience-dates"><time datetime="2014-04">Apr 2014</time> — <time datetime="2016-05">May 2016</time></p>
+
+            <article class="pillar-row">
+              <span class="pillar-num" aria-hidden="true">III</span>
+              <h3>Cloud &amp; AI-Augmented Engineering</h3>
+              <p>
+                Combining Microsoft Azure cloud architecture with modern AI-assisted development workflows to elevate engineering velocity and software quality.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- EXPERIENCE -->
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="experience-heading">
+            <div>
+              <p class="section-label">Experience</p>
+              <h2 id="experience-title">Where I’ve <em>worked</em></h2>
+            </div>
+            <p class="section-note">
+              Over a decade of engineering and technical leadership across consulting, financial technology, and energy systems.
+            </p>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="experience-time">
+                <p class="experience-dates"><time datetime="2023-10">Oct 2023</time> — Present</p>
+                <span class="experience-era">Current</span>
+              </div>
+
+              <div class="experience-details">
+                <h3>Senior Consultant <span>· Team / Tech Lead</span></h3>
+                <p class="company-name">BDO Canada LLP</p>
+                <p class="experience-summary">
+                  Leading enterprise digital solutions, cloud architecture, and cross-functional engineering delivery for client transformation initiatives.
+                </p>
+              </div>
+
+              <div class="company-logo">
+                <img src="resources/logos/BDO-Canada-Logo.svg" alt="BDO Canada">
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-time">
+                <p class="experience-dates"><time datetime="2022-04">Apr 2022</time> — <time datetime="2023-06">Jun 2023</time></p>
+                <span class="experience-era">Advisory</span>
+              </div>
+
+              <div class="experience-details">
+                <h3>Assistant Manager <span>· Team / Tech Lead</span></h3>
+                <p class="company-name">Deloitte</p>
+                <p class="experience-summary">
+                  Guided technical delivery and engineering teams across large-scale enterprise consulting engagements and digital modernization programs.
+                </p>
+              </div>
+
+              <div class="company-logo deloitte-logo">
+                <img src="resources/logos/deloitte.svg" alt="Deloitte">
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-time">
+                <p class="experience-dates"><time datetime="2016-05">May 2016</time> — <time datetime="2022-04">Apr 2022</time></p>
+                <span class="experience-era">6 Years</span>
+              </div>
+
+              <div class="experience-details">
+                <h3>Software Engineer II</h3>
+                <p class="company-name">FIS</p>
+                <p class="experience-summary">
+                  Engineered and scaled mission-critical financial technology platforms across six years of full-lifecycle enterprise software delivery.
+                </p>
+              </div>
+
+              <div class="company-logo fis-logo">
+                <img src="resources/logos/FIS_Logo_Green.png" alt="FIS">
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-time">
+                <p class="experience-dates"><time datetime="2014-04">Apr 2014</time> — <time datetime="2016-05">May 2016</time></p>
+                <span class="experience-era">Foundation</span>
+              </div>
+
+              <div class="experience-details">
+                <h3>Software Developer</h3>
+                <p class="company-name">OATI</p>
+                <p class="experience-summary">
+                  Built and maintained high-availability web applications and operational data systems for the smart grid and energy sector.
+                </p>
+              </div>
+
+              <div class="company-logo oati-logo">
+                <img src="resources/logos/oati.jpeg" alt="OATI">
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
       <section class="certifications-section" id="certifications" aria-labelledby="certifications-title">
         <div class="shell">
           <div class="experience-heading">
-            <p class="section-label">CERTIFICATIONS</p>
-            <h2 id="certifications-title">Credentials</h2>
+            <div>
+              <p class="section-label">Certifications</p>
+              <h2 id="certifications-title">Selected <em>credentials</em></h2>
+            </div>
+            <p class="section-note">
+              Official accreditations across cloud architecture, artificial intelligence, and modern engineering workflows.
+            </p>
           </div>
+
           <div class="certifications-list">
             <article class="certification-item">
-              <div>
+              <span class="cert-index" aria-hidden="true">01</span>
+              <div class="certification-info">
                 <h3>Azure Developer Associate</h3>
-                <p>Microsoft Certified</p>
+                <p>Microsoft Certified · Cloud Application Architecture &amp; Development</p>
               </div>
-              <button class="certificate-viewer" type="button" data-title="Azure Developer Associate" data-file="resources/certs/ada.pdf">View certificate <span aria-hidden="true">↗</span></button>
+              <button class="certificate-viewer" type="button" data-title="Azure Developer Associate" data-file="resources/certs/ada.pdf">
+                <span>View certificate</span>
+                <i aria-hidden="true">↗</i>
+              </button>
             </article>
+
             <article class="certification-item">
-              <div>
+              <span class="cert-index" aria-hidden="true">02</span>
+              <div class="certification-info">
                 <h3>Azure AI Fundamentals</h3>
-                <p>Microsoft Certified</p>
+                <p>Microsoft Certified · Artificial Intelligence &amp; Cognitive Workloads</p>
               </div>
-              <button class="certificate-viewer" type="button" data-title="Azure AI Fundamentals" data-file="resources/certs/ai_fund.pdf">View certificate <span aria-hidden="true">↗</span></button>
+              <button class="certificate-viewer" type="button" data-title="Azure AI Fundamentals" data-file="resources/certs/ai_fund.pdf">
+                <span>View certificate</span>
+                <i aria-hidden="true">↗</i>
+              </button>
             </article>
+
             <article class="certification-item">
-              <div>
+              <span class="cert-index" aria-hidden="true">03</span>
+              <div class="certification-info">
                 <h3>GitHub Copilot</h3>
-                <p>GitHub Certified</p>
+                <p>GitHub Certified · AI-Augmented Software Engineering</p>
               </div>
-              <button class="certificate-viewer" type="button" data-title="GitHub Copilot" data-file="resources/certs/github_copilot.pdf">View certificate <span aria-hidden="true">↗</span></button>
+              <button class="certificate-viewer" type="button" data-title="GitHub Copilot" data-file="resources/certs/github_copilot.pdf">
+                <span>View certificate</span>
+                <i aria-hidden="true">↗</i>
+              </button>
             </article>
           </div>
         </div>
@@ -115,17 +294,41 @@
     <dialog class="certificate-dialog" aria-labelledby="certificate-dialog-title">
       <div class="certificate-dialog-header">
         <h2 id="certificate-dialog-title">Certificate preview</h2>
-        <button class="certificate-dialog-close" type="button" aria-label="Close certificate preview">Close <span aria-hidden="true">×</span></button>
+        <div class="certificate-dialog-actions">
+          <a class="dialog-external-link" id="certificate-external-link" href="resources/certs/ada.pdf" target="_blank" rel="noreferrer">
+            Open PDF <span aria-hidden="true">↗</span>
+          </a>
+          <button class="certificate-dialog-close" type="button" aria-label="Close certificate preview">
+            Close <span aria-hidden="true">×</span>
+          </button>
+        </div>
       </div>
       <iframe class="certificate-frame" title="Read-only certificate preview"></iframe>
     </dialog>
 
-    <footer class="site-footer">
-      <div class="shell footer-inner">
-        <a class="wordmark footer-mark" href="#home">SV</a>
-        <a href="mailto:sidhantverma@hotmail.com">sidhantverma@hotmail.com</a>
-        <a href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <p>© <span id="year">2026</span> Sidhant Verma</p>
+    <footer class="site-footer" id="contact">
+      <div class="shell">
+        <div class="footer-editorial">
+          <p class="section-label section-label-light">Get in touch</p>
+          <h2>
+            Always open to thoughtful conversations on <em>engineering, architecture,</em> and digital transformation.
+          </h2>
+          <div class="footer-contact-links">
+            <a class="footer-big-link" href="mailto:sidhantverma@hotmail.com">
+              <span>sidhantverma@hotmail.com</span>
+              <i aria-hidden="true">↗</i>
+            </a>
+            <a class="footer-big-link" href="https://www.linkedin.com/in/sidhant-verma/" target="_blank" rel="noreferrer">
+              <span>linkedin.com/in/sidhant-verma</span>
+              <i aria-hidden="true">↗</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-inner">
+          <a class="wordmark footer-mark" href="#home">SV<span>.</span></a>
+          <p>© <span id="year">2026</span> Sidhant Verma</p>
+        </div>
       </div>
     </footer>
   </body>
