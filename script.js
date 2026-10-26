@@ -34,6 +34,7 @@ document.querySelector("#experience-years").textContent = `${experienceYears}+ y
 const certificateDialog = document.querySelector(".certificate-dialog");
 const certificateFrame = document.querySelector(".certificate-frame");
 const certificateTitle = document.querySelector("#certificate-dialog-title");
+const certificateExternalLink = document.querySelector("#certificate-external-link");
 
 document.querySelectorAll(".certificate-viewer").forEach((button) => {
   button.addEventListener("click", () => {
@@ -50,6 +51,9 @@ document.querySelectorAll(".certificate-viewer").forEach((button) => {
     }
 
     certificateTitle.textContent = title;
+    if (certificateExternalLink) {
+      certificateExternalLink.href = file;
+    }
     certificateFrame.src = `${file}#toolbar=0&navpanes=0`;
     certificateDialog.showModal();
   });
@@ -57,6 +61,12 @@ document.querySelectorAll(".certificate-viewer").forEach((button) => {
 
 document.querySelector(".certificate-dialog-close").addEventListener("click", () => {
   certificateDialog.close();
+});
+
+certificateDialog.addEventListener("click", (event) => {
+  if (event.target === certificateDialog) {
+    certificateDialog.close();
+  }
 });
 
 certificateDialog.addEventListener("close", () => {
