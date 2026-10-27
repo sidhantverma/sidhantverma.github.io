@@ -23,5 +23,5 @@ I bring a strong mix of technical execution, leadership, and collaboration. My b
 
 ## Contact
 
-- Email: sidhantverma@hotmail.com
+- Email: contact@sidhantverma.online
 - LinkedIn: https://www.linkedin.com/in/sidhant-verma/
