@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ec">
+    <meta name="description" content="Project the future value of multiple lump-sum and recurring investments, entirely in your browser.">
+    <title>Portfolio Worth Projector — Sidhant Verma</title>
+    <link rel="stylesheet" href="tools.css">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="portfolio-worth.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#calculator">Skip to calculator</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="../index.html" aria-label="Sidhant Verma home">
+          <span class="wordmark-initials">SV<span>.</span></span>
+          <span class="wordmark-full">Sidhant Verma</span>
+        </a>
+        <div class="tool-nav">
+          <a class="portfolio-link" href="index.html">All tools</a>
+          <a class="portfolio-link" href="../index.html">Back to portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="projector-hero" aria-labelledby="page-title">
+        <div class="projector-orbit" aria-hidden="true"></div>
+        <div class="shell">
+          <p class="eyebrow"><span></span> Private financial planning</p>
+          <div class="projector-heading">
+            <div>
+              <h1 id="page-title">Your future portfolio,<br><em>in one clear view.</em></h1>
+              <p>Combine lump-sum and recurring investments, each with its own return and timeline, to estimate your total worth.</p>
+            </div>
+            <div class="projection-year-badge" aria-hidden="true">
+              <span>Compound</span>
+              <strong>year by year</strong>
+              <svg viewBox="0 0 120 36">
+                <path d="M2 31c18 0 19-8 35-8s18 3 31-5 20-16 50-16"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-section" id="calculator" aria-label="Portfolio worth calculator">
+        <div class="shell">
+          <div class="calculator-toolbar">
+            <div>
+              <p class="section-label">Portfolio inputs</p>
+              <p id="storage-status" class="storage-status" role="status">Changes are saved automatically on this device.</p>
+            </div>
+            <div class="toolbar-actions">
+              <label class="currency-field" for="currency">
+                <span>Currency</span>
+                <select id="currency">
+                  <option value="CAD">CAD</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="INR">INR</option>
+                  <option value="AUD">AUD</option>
+                </select>
+              </label>
+              <button class="secondary-button" id="reset-portfolio" type="button">Reset examples</button>
+            </div>
+          </div>
+
+          <div class="calculator-layout">
+            <section class="investment-workspace" aria-labelledby="investments-title">
+              <div class="workspace-heading">
+                <div>
+                  <h2 id="investments-title">Your investments</h2>
+                  <p>Add as many investments as you need. Each one can use a different strategy.</p>
+                </div>
+                <span class="investment-count" id="investment-count">0 investments</span>
+              </div>
+
+              <div class="investment-list" id="investment-list"></div>
+
+              <button class="add-investment" id="add-investment" type="button">
+                <span aria-hidden="true">+</span>
+                Add another investment
+              </button>
+            </section>
+
+            <aside class="portfolio-summary" aria-labelledby="portfolio-title">
+              <div class="summary-kicker">
+                <span class="live-dot" aria-hidden="true"></span>
+                Live projection
+              </div>
+              <h2 id="portfolio-title">Total portfolio worth</h2>
+              <p class="portfolio-total" id="portfolio-total">$0</p>
+              <p class="total-caption" id="total-caption">Across 0 investments</p>
+
+              <div class="summary-split">
+                <div>
+                  <span>Total contributed</span>
+                  <strong id="total-contributed">$0</strong>
+                </div>
+                <div>
+                  <span>Projected growth</span>
+                  <strong id="total-growth">$0</strong>
+                </div>
+              </div>
+
+              <div class="portfolio-mix">
+                <div class="mix-heading">
+                  <span>Portfolio composition</span>
+                  <span>Projected value</span>
+                </div>
+                <div class="mix-track" id="mix-track" aria-hidden="true"></div>
+                <div class="investment-results" id="investment-results"></div>
+              </div>
+
+              <div class="summary-note">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 4.5 6.5v5c0 4.7 3.1 7.6 7.5 9.5 4.4-1.9 7.5-4.8 7.5-9.5v-5L12 3Z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p>Your portfolio data stays in this browser. Nothing is uploaded or shared.</p>
+              </div>
+            </aside>
+          </div>
+
+          <section class="assumptions" aria-labelledby="assumptions-title">
+            <div>
+              <p class="section-label">How it works</p>
+              <h2 id="assumptions-title">Clear assumptions.<br><em>No black box.</em></h2>
+            </div>
+            <div class="assumption-list">
+              <article>
+                <span>01</span>
+                <h3>Monthly compounding</h3>
+                <p>The annual return is divided into monthly periods and compounded each month.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>End-of-period deposits</h3>
+                <p>Recurring contributions are added at the end of each selected contribution period.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Planning estimate</h3>
+                <p>Returns, taxes, fees, and inflation are not guaranteed. This is not financial advice.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="wordmark footer-mark" href="../index.html">SV<span>.</span></a>
+        <p>Made for practical, private work in the browser.</p>
+        <a href="mailto:contact@sidhantverma.online">Send a suggestion <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
